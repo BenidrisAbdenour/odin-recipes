@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffdeec;
+  font-family: sans-serif;
+}
+
+.recipe-title {
+  padding: 20px 0px;
+  border-bottom: 5px solid #b56464;
+  width: fit-content;
+  margin: 50px auto;
+}
+
+.recipe-overview-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.recipe-overview {
+  margin-top: 100px;
+  margin-right: 100px;
+  padding: 50px;
+  height: fit-content;
+  background-color: #b56464;
+  color: white;
+  border-radius: 20px;
+  box-shadow:  rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.recipe-overview .recipe-description {
+    padding-bottom: 10px;
+}
+
+.recipe-overview .para {
+    font-size: 19px;
+}
+
+.recipe-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 600px;
+  height: 600px;
+  border-radius: 100%;
+  margin: auto;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px inset;
+}
+
+.recipe-image .image {
+  width: 90%;
+  height: 90%;
+  border-radius: 100%;
+  border: 1px solid rgb(180, 180, 180);
+}
+
+.recipe-details {
+    margin: 100px;
+    background-color: rgb(255, 255, 255);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow:  rgba(0, 0, 0, 0.131) 0px 3px 8px;
+}
+
+.recipe-details .title {
+    padding-bottom: 8px;
+    border-bottom: 4px solid #b56464;
+    width: fit-content;
+}
+
+.recipe-details .list {
+    margin: 40px 0;
+}
+
+.recipe-details .item{
+    font-size: 18px;
+    padding: 8px 0;
+    line-height: 1.6;
+}
+
+.recipe-details .item strong {
+  display: block;
+}
+
+.recipe-details ul {
+    list-style:none;
+}
+
+.home-link {
+  width: fit-content;
+  padding: 10px;
+  border-radius: 100%;
+  margin:20px;
+  background-color: rgb(0, 0, 0);
+  font-size: 30px;
+  position: fixed;
+  top: 0;
+  transition: 0.4s;
+  box-shadow: rgba(0, 0, 0, 0.545) 0px 3px 8px;
+  cursor: pointer;
+}
+
+.home-link i{
+  color: white;
+  transition: 0.4s;
+}
+
+
+.home-link:hover{
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.54) 0px 5px 15px;
+}
+
+.home-link:hover i{
+  color: black;
+}
